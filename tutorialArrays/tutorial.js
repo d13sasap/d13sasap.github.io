@@ -48,8 +48,7 @@ document.getElementById("txt").innerHTML += " </br>Qué devolverá? "+
  
 +")</br>arr[arr.length-1]()</br> Devolverá 'a','b','function'";
 
-//ejercicio 7
-
+// ejercicio 7
 var obj2 = {className: 'open menu'};
 removeClass(obj2, "menu");
 document.getElementById("txt").innerHTML += " </br>removeClass(obj2, \"menu\") = "+obj2.className;
@@ -78,12 +77,22 @@ for (var i = 0; i < people.length; i++) {
 //arr = ["a", -1, 2, "b"];
 
 
-document.getElementById("txt").innerHTML += "</br><input type='button' value='Teoría' onClick='mostrarTeoria()'>";
+document.getElementById("txt").innerHTML += "</br><input type='button' value='Teoría' onClick='mostrarTeoria()'></br>";
+
+/*dfor ecah*/
+var nombres = ["Pablo","Coral","Dani"];
+nombres.forEach(mostrarNombre);
 
 
  
 //alert(arr)  // [1,2]
 }//onLoad
+
+function mostrarNombre(array){
+	document.getElementById("txt").innerHTML += "foreach: "+array+"</br>";
+
+	//mensaje.innerHTML += 
+}
 // function filter(arr, function){
 
 // 	//se lo que busca el ejercicio pero no se como tratarlo
@@ -209,3 +218,5 @@ function addClass(objeto, clase){
 	objeto.className = arraySplit.join(" ");
 
 }
+
+//document.addEventListener("DOMContentLoaded",init) --> init es la función en la que meteremos todos los códigos
