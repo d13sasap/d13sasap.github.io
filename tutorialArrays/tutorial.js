@@ -77,15 +77,18 @@ for (var i = 0; i < people.length; i++) {
 //arr = ["a", -1, 2, "b"];
 
 
-document.getElementById("txt").innerHTML += "</br><input type='button' value='Teoría' onClick='mostrarTeoria()'></br>";
+
 
 /*dfor ecah*/
 var nombres = ["Pablo","Coral","Dani"];
 nombres.forEach(mostrarNombre);
+document.getElementById("txt").innerHTML += "</br>La suma de los primos del 1 al 100 es igual a "+sumaPrimos1al100()+"</br>";
+
 
 
  
 //alert(arr)  // [1,2]
+document.getElementById("txt").innerHTML += "</br><input type='button' value='Teoría' onClick='mostrarTeoria()'></br>";
 }//onLoad
 
 function mostrarNombre(array){
@@ -129,6 +132,32 @@ function mostrarTeoria(){
 "</br>2. Método forEach() de un array. Indica utilidad y si funciona en todos los navegadores. Entrega un pequeño código que demuestre su uso";
 
 }
+function sumaPrimos1al100(){
+	suma = 0;
+	for (var i = 1; i < 101; i++) {
+		if(esPrimo(i)){
+			suma += i;
+		}
+			
+	}
+	return suma;
+}
+function esPrimo(num){
+if (num == 1 || num == 2) {
+return true;
+}
+else{
+	for (var i=2;i<num;i++) {
+		if(num % i == 0) {
+			//alert('El numero ' +num+ ' no es primo'); 
+			return false;
+		}else{
+			//alert('El numero ' +num+ ' es primo'); 
+			return true;
+		}
+	}
+}
+}//esPrimo
 function compararEdad(a, b) {
   if (a.age > b.age) 
   	return 1;
