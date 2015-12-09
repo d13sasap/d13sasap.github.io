@@ -1,0 +1,114 @@
+<!-- Código realizado por Pablo Sánchez Sanvicente 2015 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Gestor De Tareas PSS</title>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+   <header><H1>GESTOR DE TAREAS DESARROLLO APLICACIONES WEB</H1></header>
+  <main>
+  	
+                   <h2>Nueva Tarea</h1>
+                    
+                        <form>
+                            <form action="php/enviamail.php" method="post">
+                
+                    <table border=0>
+                        <tr>
+                            <td width=50%>
+                                <p style="text-align:right;">Nombre Tarea: </p>
+                            </td>
+                            <td width=50%>
+                                <input type="text" size=50% required name="nombre" autofocus/>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width=50%>
+                                <p style="text-align:right;">Módulo: </p>
+                            </td>
+                            <td width=50%>
+                        <select id="modulos" name="modulos">
+      <option value="" selected="selected">- Módulo -</option>
+      <option value="daw">DAW</option>
+      <option value="diw">DIW</option>
+      <option value="dwec">DWEC</option>
+      <option value="dwes">DWES</option>
+        <option value="hlc">ANDROID</option>
+      <option value="EMP">EMPRESAS</option>
+                            </td>
+                        </tr>
+    </select>
+                        </tr>
+                         <tr>
+                            <td width=50%>
+                                <p style="text-align:right;">Fecha entrega: </p>
+                            </td>
+                            <td width=50%>
+                  <input type="date" name="fechahora">
+                            </td>
+                        </tr>
+    </select>
+                        </tr>
+                        <tr>
+                            <td width=50%>
+                                <p style="text-align:right;">Hora Entrega: </p>
+                            </td>
+                            <td width=50%>
+                        <input type="time" name="hora">
+                            </td>
+                        </tr>
+    </select>
+                        </tr>
+                       
+
+
+                        
+                        <tr>
+                            <td><p style="text-align:right;" required>Descripción: </p>
+                            </td>
+                            <td>    
+                                <textarea cols=50% rows=6 name="mensaje"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                <input type="submit" value="Añadir Tarea">
+                            </td>
+                        </tr>
+                    </table>
+
+                </form>
+                        </form>
+                 
+            </div>
+            </main>
+  </main>
+	<nav>
+        <h2><a href="index.html">- Tareas Recientes</a></h2>
+        <h2>- Módulos</h2><ul>
+      <li><a href="daw.html">Despliegue Aplicaciones</li></a>
+      <li><a href="dwec.html">DWEC</a></li>
+      <li><a href="dwes.html">DWES</a></li>
+      <li><a href="diw.html">DIW</a></li>
+      <li><a href="hlc.html">HLC</a></li>
+      <li><a href="emp.html">EMPRESAS</a></li>
+    </ul>
+    <h2>- Administración</h2><ul>
+        <li><a href="formulario.html">Agregar Tarea</a></li>
+      <li><a href="#">Eliminar Tarea</a></li>
+    </ul>
+    </nav>
+ 
+ 
+ <footer>Diseñado por: Pablo Sánchez Sanvicente 2ºDAW</footer>
+
+</body>
+</html>
