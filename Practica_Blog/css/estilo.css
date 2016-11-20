@@ -502,7 +502,13 @@ template {
 h1{
   font-family: LobsterBoldItalic;
 }
-h2,h3,h4,h5{
+h2{
+  font-family: LobsterItalic;
+  float: right;
+  margin-right: 15%;
+  margin-top: 0px;
+}
+h3,h4,h5{
   font-family: LobsterBold;
 }
 h6{
@@ -533,11 +539,12 @@ footer{
   background-color: #FF843A;
   border-radius: 0 0 15px 15px;
   background: linear-gradient( #FF9D53, #FF843A);
+  margin-top: 50px;
+  font-size: 20px;
 
 }
 
 nav{
-
   margin: 0;
   padding: 0;
   text-align: center;
@@ -615,9 +622,8 @@ main{
 aside{
   float: right;
   width: 20%;
-  *border: double purple;
   margin-right: 20px;
-
+  text-align: center;
 }
 
 main section {
@@ -729,6 +735,7 @@ box-shadow: 10px 10px 5px #888888;
   background-size: 100% 100%;
 }
 
+
 #sobreMi a{
   float: right;
   margin-right: 15px;
@@ -748,11 +755,177 @@ aside header{
   margin-left: 5px;
 
 }
-#publicidad{
-  margin-top: 25px;
-}
 .SVG{
   width: 25px;
   height: 25px;
   float: right;
 }
+
+#mensual{
+  width: 90%;
+  margin-left: 20%;
+
+}
+#mensual header{
+  position: absolute;
+    background-size: 180px 180px;
+  background-position: top right;
+}
+
+
+.pastanoviembre{
+  background: url("../img/carbonara.jpg") no-repeat;
+  background-size: 180px 180px;
+  background-position: top right;
+}
+
+.pastaoctubre{
+  background: url("../img/macarrones.jpg") no-repeat;
+  background-size: 180px 180px;
+  background-position: top right;
+}
+
+.verduranoviembre{
+  background: url("../img/esparragos.jpg") no-repeat;
+  background-size: 180px 180px;
+  background-position: top right;
+}
+.verduraoctubre{
+  background: url("../img/pisto.jpg") no-repeat;
+  background-size: 180px 180px;
+  background-position: top right;
+}
+.carnenoviembre{
+  background: url("../img/pollo.jpg") no-repeat;
+  background-size: 180px 180px;
+  background-position: top right;
+}
+.carneoctubre{
+  background: url("../img/costillas.jpg") no-repeat;
+  background-size: 180px 180px;
+  background-position: top right;
+}
+.pescadonoviembre{
+  background: url("../img/lubina.jpg") no-repeat;
+  background-size: 180px 180px;
+  background-position: top right;
+}
+.pescadooctubre{
+  background: url("../img/sardinas.jpg") no-repeat;
+  background-size: 180px 180px;
+  background-position: top right;
+}
+.postrenoviembre{
+  background: url("../img/natillas.jpg") no-repeat;
+  background-size: 180px 180px;
+  background-position: top right;
+}
+.postreoctubre{
+  background: url("../img/tarta.jpg") no-repeat;
+  background-size: 180px 180px;
+  background-position: top right;
+}
+
+.nomiresnoviembre{
+  background: url("../img/burguer.jpg") no-repeat;
+  background-size: 180px 180px;
+  background-position: top right;
+}
+.nomiresoctubre{
+  background: url("../img/perrito.jpg") no-repeat;
+  background-size: 180px 180px;
+  background-position: top right;
+}
+
+.preparacion{
+  -webkit-column-count: 2; /* Para Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Para Firefox */
+  column-count: 2;
+  -webkit-column-rule: 4px dashed rgba(243 , 106 ,32, 0.8); /* Para Chrome, Safari, Opera */
+  -moz-column-rule: 4px dashed rgba(243 , 106 ,32, 0.8); /* Para Firefox */
+  column-rule: 4px dashed rgba(243 , 106 ,32, 0.8);
+  -webkit-column-gap: 55px;/* Para Chrome, Safari, Opera */
+  -moz-column-gap: 55px; /* Para Firefox */
+  column-gap: 55px
+}
+
+main a:hover{
+  text-decoration: underline;
+  color: white;
+}
+
+#subir{
+  position: fixed;
+  right: -4%;
+  bottom: -3%;
+    transform: scale(0.35, 0.35);
+}
+
+#sobremi{
+  margin-left: 23%;
+  width: 80%;
+  text-align: left;
+
+  background: url("../img/perfil.jpg") no-repeat;
+  background-size: 120px 120px;
+  background-position: top right;
+  background-color: #FF843A;
+}
+
+#publi img{
+  width: 75%;
+  height: 75%;
+   margin-top: 25px;
+  
+}
+
+footer #redes{
+  margin-top:15px;
+  margin-bottom: 15px;
+
+}
+
+
+/**<!-- Formularios -->**/
+input[required]{
+  border-color:orange;
+  box-shadow: 0px 0px 5px orange;
+}
+
+input:invalid{
+  border-color:red;
+  box-shadow: 0px 0px 10px red;
+  border-radius: 0px 5px 0px 5px;
+}
+
+form table{
+  width:100%;
+  border: 0px solid #FF843A;
+  padding: 0px;
+  margin:auto;
+}
+
+form{
+  
+  color:black;
+  background-color: #FF843A;
+  margin:auto;
+  width:500px;
+  padding:10px;
+}
+form input, form textarea{
+  font-size:10px;
+  background:rgba(255,255,255,0.5);
+  border: 1px dotted rgba(255,255,255,1);
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+  border-radius: 5px;
+  transition: background 1s, box-shadow: 1s; border 1s;
+}
+
+form input:hover, form textarea:hover{
+  background:rgba(255,255,255,1);
+  box-shadow: 0px 0px 5px rgba(255,255,255,1);
+  -webkit-box-shadow: 0px 0px 5px rgba(255,255,255,1);
+  border: 1px dotted rgba(0,0,0,1);
+}
+

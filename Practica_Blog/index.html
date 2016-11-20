@@ -3,39 +3,50 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Blog Treinteañero</title>
+	<meta name="description" content="Blog Recetas SupervivenciaTreinteañeras Pablo Sánchez Sanvicente" />
+	<meta name="keywords" content="Blog,recetas,Pablo Sánchez,joven,supervivencia,comida" />
+	<meta http-equiv="refresh" content="500" />
 	<link rel=stylesheet href="css/estilo.css" type="text/css" />
+	<script type="text/javascript" src="js/blog.js"></script>
 </head>
-<body>
+<body onload="aleatorio()">
+	<a id="subir" href="#">
+		<canvas id="micanvas" width="150" height="150" alt="Contactar" alt="Subir">
+			Este texto se muestra para los navegadores no compatibles con canvas.
+			Por favor, utiliza Firefox, Chrome, Safari u Opera.
+		</canvas>
+	</a>
 	<div id="principal">
 	<!--  nav   -->
 	<nav>
 		<ul>
-			<a href="#"><li>Inicio</li></a>
-			<a href="#"><li>Pastas</li></a>
-			<a href="#"><li>Verduras</li></a>
-			<a href="#"><li>Carnes</li></a>
-			<a href="#"><li>Pescados</li></a>
-			<a href="#"><li>Postres</li></a>
-			<a href="#"><li>Mamá no mires</li></a>
-			<a href="#"><li>Sobre mí</li></a>
-			<a href="#"><li>Contacto</li></a>
+			<a href="index.html"><li>Inicio</li></a>
+			<a href="pastas.html"><li>Pastas</li></a>
+			<a href="verduras.html"><li>Verduras</li></a>
+			<a href="carnes.html"><li>Carnes</li></a>
+			<a href="pescados.html"><li>Pescados</li></a>
+			<a href="postres.html"><li>Postres</li></a>
+			<a href="mamanomires.html"><li>Mamá no mires</li></a>
+			<a href="sobremi.html"><li>Sobre mí</li></a>
+			<a href="contacto.html"><li>Contacto</li></a>
 		</ul>
 	</nav>
 	<!--  header   -->
-	<header><h1>Recetas de Supervivencia Treinteañera</h1></header>
+	<header><h1>Recetas de Supervivencia Treinteañera</h1>
+		<h2>"Porque la pereza no está reñida con la salud."</h2></header>
 		<!--   main  -->
 		<main>
 			<section id="pasta">
-					<header>Pasta de la semana</header>
+					<header><a href="">Pasta del mes</a></header>
 				<article >
-					<a href="#"><div class = "diaria"></div></a>
+					<a href="pastas.html"><div class = "diaria"></div></a>
 					<p><b>Nombre:</b> Espaguetis Carbonara</p>
 					<p><b>Dificultad:</b> 6</p>
 					<p><b>Descripción:</b> Sencilla receta de pasta para sobrevivir nuestro día a día</p>
 				</article>
 			</section>
 			<section id="verdura">
-					<header>Verdura de la semana</header>
+					<header><a href="#">Verdura del mes</a></header>
 				<article >
 					<a href="#"><div class = "diaria"></div></a>
 					<p><b>Nombre:</b> Espáragos plancha.</b></p>
@@ -44,7 +55,7 @@
 				</article>
 			</section>
 			<section id="carne">
-					<header>Carne de la semana</header>
+					<header><a href="#">Carne del mes</a></header>
 				<article>
 					<a href="#"><div class = "diaria"></div></a>
 					<p><b>Nombre:</b> Pollo plancha.</p>
@@ -53,7 +64,7 @@
 				</article>
 			</section>
 			<section>
-					<header>Pescado de la semana</header>
+					<header><a href="#">Pescado de la semana</a></header>
 				<article id="pescado">
 					<a href="#"><div class = "diaria"></div></a>
 					<p><b>Nombre: </b>Lubina plancha.</p>
@@ -62,7 +73,7 @@
 				</article>
 			</section>
 			<section id="postre">
-					<header>Postre de la semana</header>
+					<header><a href="#">Postre del mes</a></header>
 				<article>
 					<a href="#"><div class = "diaria"></div></a>
 					<p><b>Nombre:</b> Natillas caseras.</p>
@@ -71,10 +82,10 @@
 				</article>
 			</section>
 			<section id="nomires">
-					<header>No mires mamá semanal</header>
+					<header><a href="#">Mamá no mires del mes</a></header>
 				<article>
 					<a href="#"><div class = "diaria"></div></a>
-					<p><b>Nombre:</b> Hamburguesa de queso casera.</p>
+					<p><b>Nombre:</b> Hamburguesa con queso casera.</p>
 					<p><b>Dificultad:</b> 4.</p>
 					<p><b>Descripción:</b> Deliciosa receta para salir del paso pero no del peso</p>
 				</article>
@@ -89,14 +100,23 @@
 				
 				<a href="#"><img src="img/coding.svg" class="SVG" alt="imagen SVG" title="imagen SVG" />más...</a>
 			</section>
-			<!--
-			<section id="datos"><header>
 
-			</header></section>
-		-->
-			<section id="publicidad"><header>Publicidad</header></section>
+			<section id="publi">
+				<header>Publicidad</header>
+				<img src="" name="imagen" />
+				
+				
+				
+			</section>
 		</aside>
-	<footer>Footer de la web<div id="redes"></div></footer>
-	</div>
+	<footer>
+		<div>Web diseñada por Pablo Sánchez Sanvicente. "I.E.S Gran Capitán Córdoba" - 2016 -</div>
+		<div id= "redes">
+			<a href="http://twitter.com/psanvicente" target="_blank"><img src="https://lh6.googleusercontent.com/-vao9pzZoGtk/T6VYC4d1YMI/AAAAAAAAA0U/4rdP2chJido/s48/twitter48.png" width="48" height="48" alt="Síguenos en Twitter" /></a>
+			<a href="http://www.facebook.com/pablo.sanchezsanvicente" target="_blank"><img alt="Siguenos en Facebook" src="https://lh3.googleusercontent.com/-NSLbC_ztNls/T6VX0g6z8AI/AAAAAAAAA0A/_vyIBrmZbuY/s48/facebook48.png" width="48" height="48"  /></a>
+			<a href="http://psanvicente.blogspot.com.es/" target="_blank"><img alt="Siguenos en Blogger" src="https://lh4.googleusercontent.com/-xZe9TOOvWOg/UAZnvRrsW0I/AAAAAAAABBs/e04pnurQRwA/s48/blogger48.png" width="48" height="48"  /></a><div id="redes"></div>
+		</div>
+	</footer>
+
 </body>
 </html>
