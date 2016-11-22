@@ -7,7 +7,7 @@ function aleatorio() {
 }
 
 window.onload = function(){
-	setInterval(aleatorio, 4500);
+
 	//Recibimos el elemento canvas
 var elemento = document.getElementById('micanvas');
 //Comprobación sobre si encontramos un elemento
@@ -31,6 +31,9 @@ if (ctx) {
 	ctx.stroke();
 }
 }
+
+	aleatorio();
+	setInterval(aleatorio, 4500);
 
 }
 let i = 0;
