@@ -516,21 +516,67 @@ h6{
 }
 h1{
   font-size: 60px;
+  margin-bottom: 75px;
+  margin-top: 75px;
+  animation: parpadeo 7s infinite;
+
 }
+
+@keyframes parpadeo{
+  0%{text-shadow: 0px 0px 1px red;}
+  50%{text-shadow: 0px 0px 25px white;}
+  100%{text-shadow: 0px 0px 1px red;}
+}
+
 body{
   font-family: LobsterRegular;
   background-color: #FFD086;
 }
 
-#principal{
-  width: 94%;
+
+a{
+  text-decoration: none;
+  color: black;
+}
+aside{
+  float: right;
+  width: 20%;
+  margin-right: 20px;
+  text-align: center;
+}
+
+aside section>a{
+  display: block;
+  width: 65%;
+  height: 65%;
+}
+
+aside section{
+  padding-top: 15px;
+  height: 250px;
+  background-color: #FF843A;
+}
+
+aside header{
+  width: 80%;
   height: auto;
   margin: auto;
-  background-color: #FF9D53;
-  height: auto;
-  border-radius: 15px 15px 15px 15px;
+  margin-left: 5px;
 
 }
+
+
+.diaria {
+  width: 100%;
+  height: 125px;
+  float left;
+  position: relative;
+  transform: translate(0px, 0px);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 10px 10px 5px #888888;
+}
+
 footer{
   display: inline-block;
   height: 100px;
@@ -544,16 +590,51 @@ footer{
 
 }
 
+header{
+  text-align: center;
+  position: relative;
+  background-color: #FF9D53;
+  display: inline;
+}
+
+main{
+
+  width: 75%;
+  float: left;
+}
+
+main article>a{
+  display: block;
+  width: 65%;
+}
+main .diaria:hover{
+ transform: rotate(-10deg);
+box-shadow: 10px 10px 5px #888888;
+}
+
+main section {
+  padding-top: 15px;
+  width: 40%;
+  margin-bottom: 25px;
+  margin-right: 0px;
+  margin-left: 5%;
+  float: left;
+  display: inline-block;
+  background-color: #FF843A;
+}
+
+main a:hover{
+  text-decoration: underline;
+  color: white;
+}
+
 nav{
   margin: 0;
   padding: 0;
   text-align: center;
-  *border: solid red;
   border-radius: 15px 15px 0 0;
   background: linear-gradient( #FF843A, #FF9D53);
-
-
-  
+ 
 }
 nav ul{
   padding: 0px;
@@ -579,18 +660,15 @@ nav ul li:hover{
 
 
 }
-a{
-  text-decoration: none;
-  color: black;
-}
 
-header{
-  *border: dashed blue;
-  text-align: center;
-  position: relative;
+
+#principal{
+  width: 94%;
+  height: auto;
+  margin: auto;
   background-color: #FF9D53;
-  *background-color: red;
-  display: inline;
+  border-radius: 15px 15px 15px 15px;
+
 }
 section>header, aside header{
   font-size: 20px;
@@ -601,52 +679,6 @@ section>header, aside header{
   margin-bottom: 8px;
   font-family: LobsterBold;
   background-color: inherit;
-}
-
-h1{
-  margin-bottom: 75px;
-  margin-top: 75px;
-  *text-shadow: 3px 5px grey
-  *text-shadow: 2px 2px #ff0000;
-  animation: parpadeo 7s infinite;
-
-}
-
-main{
-
-  width: 75%;
-  *border: solid green;
-  float: left;
-}
-
-aside{
-  float: right;
-  width: 20%;
-  margin-right: 20px;
-  text-align: center;
-}
-
-main section {
-  padding-top: 15px;
- *border: solid black;
-  width: 40%;
-  *height: 200px;
-  margin-bottom: 25px;
-  margin-right: 0px;
-  margin-left: 5%;
-  float: left;
-  display: inline-block;
-  background-color: #FF843A;
-  
-
-}
-
-
-
-aside section{
-  padding-top: 15px;
-  height: 250px;
-  background-color: #FF843A;
 }
 
 
@@ -664,102 +696,24 @@ section{
 }
 
 
-.diaria {
-  width: 65%;
-  height: 125px;
-  *border: solid green;
-  float left;
-  position: relative;
-  transform: translate(0px, 0px);
-  margin-top: 30px;
-  margin-bottom: 30px;
-  box-shadow: 10px 10px 5px #888888;
-
-
-}
-
-
-#pasta .diaria{
-  background: url("../img/carbonara.jpg");
-  background-size: 100% 100%;
-}
-#verdura .diaria{
-  background: url("../img/esparragos.jpg");
-  background-size: 100% 100%;
-}
 #carne .diaria{
   background: url("../img/pollo.jpg");
   background-size: 115% 125%;
 }
-#pescado .diaria{
-  background: url("../img/lubina.jpg");
-  background-size: 100% 100%;
-}
-#postre .diaria{
-  background: url("../img/natillas.jpg");
-  background-size: 100% 100%;
-}
-#nomires .diaria{
-  background: url("../img/burguer.jpg");
-  background-size: 100% 100%;
-}
-main .diaria:hover{
- transform: rotate(-10deg);
-box-shadow: 10px 10px 5px #888888;
-}
 
 
 
-@keyframes parpadeo{
-  0%{text-shadow: 0px 0px 1px red;}
-  50%{text-shadow: 0px 0px 25px white;}
-  100%{text-shadow: 0px 0px 1px red;}
+.carnenoviembre{
+  background: url("../img/pollo.jpg") no-repeat;
+  background-size: 180px 180px;
+  background-position: top right;
+}
+.carneoctubre{
+  background: url("../img/costillas.jpg") no-repeat;
+  background-size: 180px 180px;
+  background-position: top right;
 }
 
-#fotoPerfil{
-  border: 1px solid;
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 150px;
-  width: 75%;
-  background: url("../img/perfil.jpg");
-  opacity: 1;
-  background-size: 100% 100%;
-  border-radius: 100px;
-
-}
-#fotoPerfil:hover{
-  background: url("../img/perfil.jpg"), url("../img/fondo.jpg");
-  opacity: 0.9;
-  background-size: 100% 100%;
-}
-
-
-#sobreMi a{
-  float: right;
-  margin-right: 15px;
-  color: black;
-  margin-top: 10px;
-  position: relative;
-  display: inline;
-}
-#sobreMi a:hover{
-  color:   white;
-  transform: scale(1.2, 1.2);
-}
-aside header{
-  width: 80%;
-  height: auto;
-  margin: auto;
-  margin-left: 5px;
-
-}
-.SVG{
-  width: 25px;
-  height: 25px;
-  float: right;
-}
 
 #mensual{
   width: 90%;
@@ -772,6 +726,10 @@ aside header{
   background-position: top right;
 }
 
+#nomires .diaria{
+  background: url("../img/burguer.jpg");
+  background-size: 100% 100%;
+}
 
 .pastanoviembre{
   background: url("../img/carbonara.jpg") no-repeat;
@@ -784,27 +742,22 @@ aside header{
   background-size: 180px 180px;
   background-position: top right;
 }
+#pasta .diaria{
+  background: url("../img/carbonara.jpg");
+  background-size: 100% 100%;
+}
 
-.verduranoviembre{
-  background: url("../img/esparragos.jpg") no-repeat;
-  background-size: 180px 180px;
-  background-position: top right;
+#pescado .diaria{
+  background: url("../img/lubina.jpg");
+  background-size: 100% 100%;
 }
-.verduraoctubre{
-  background: url("../img/pisto.jpg") no-repeat;
-  background-size: 180px 180px;
-  background-position: top right;
+#postre .diaria{
+  background: url("../img/natillas.jpg");
+  background-size: 100% 100%;
 }
-.carnenoviembre{
-  background: url("../img/pollo.jpg") no-repeat;
-  background-size: 180px 180px;
-  background-position: top right;
-}
-.carneoctubre{
-  background: url("../img/costillas.jpg") no-repeat;
-  background-size: 180px 180px;
-  background-position: top right;
-}
+
+
+
 .pescadonoviembre{
   background: url("../img/lubina.jpg") no-repeat;
   background-size: 180px 180px;
@@ -825,6 +778,35 @@ aside header{
   background-size: 180px 180px;
   background-position: top right;
 }
+
+.SVG{
+  width: 25px;
+  height: 25px;
+  right: 0;
+}
+
+#verdura .diaria{
+  background: url("../img/esparragos.jpg");
+  background-size: 100% 100%;
+}
+
+
+.verduranoviembre{
+  background: url("../img/esparragos.jpg") no-repeat;
+  background-size: 180px 180px;
+  background-position: top right;
+}
+.verduraoctubre{
+  background: url("../img/pisto.jpg") no-repeat;
+  background-size: 180px 180px;
+  background-position: top right;
+}
+
+
+
+
+
+
 
 .nomiresnoviembre{
   background: url("../img/burguer.jpg") no-repeat;
@@ -849,10 +831,6 @@ aside header{
   column-gap: 55px
 }
 
-main a:hover{
-  text-decoration: underline;
-  color: white;
-}
 
 #subir{
   position: fixed;
@@ -870,8 +848,37 @@ main a:hover{
   background-size: 120px 120px;
   background-position: top right;
   background-color: #FF843A;
+
+
+}
+#sobreMi a{
+  margin-right: 15px;
+  color: black;
+  margin-top: 10px;
+  margin-left: 18%;
+}
+#mas:hover{
+  color:   white;
+
 }
 
+#fotoPerfil{
+  border: 1px solid;
+  margin-top: 10px;
+  height: 100%;
+  width: 100%;
+  background: url("../img/perfil.jpg");
+  opacity: 1;
+  background-size: 100% 100%;
+  border-radius: 100px;
+}
+
+
+#fotoPerfil:hover{
+  background: url("../img/perfil.jpg"), url("../img/fondo.jpg");
+  opacity: 0.85;
+  background-size: 100% 100%;
+}
 #publi img{
   width: 75%;
   height: 75%;
@@ -884,7 +891,6 @@ footer #redes{
   margin-bottom: 15px;
 
 }
-
 
 /**<!-- Formularios -->**/
 input[required]{
